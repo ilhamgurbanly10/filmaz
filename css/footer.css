@@ -1,40 +1,117 @@
 
-footer .fl-navbar-brand {
-	margin-right: 0;
-	margin-bottom: 0;
+.fl-footer {
+	margin-top: 100px;
+	padding: 0;
 }
 
-#footerContainer {
-	margin-left: 100px;
+.footer-container {
+	background-color: var(--darkgrey);
+	padding: 0 3rem 2.5rem;
+	border-top: 5.5px solid var(--green);
+	width: 100% !important;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
 }
 
-.footer-email {
-	color: white;
-	margin: 0;
+.fl-footer-list {
+	margin-top: 3rem;
 }
 
-#footerInnerContainer .fl-footer-item:first-child {
-	margin-top: 0 !important;
-} 
+.fl-footer-title {
+	letter-spacing: 1px;
+	margin-bottom: 1.3rem;
+	width: 100% !important;
+}
 
-@media only screen and (max-width: 1024px) {
+.fl-footer-item { 
+	margin-top: .3rem;
+	font-size: 12px;
+}
 
-	#footerContainer {
-		margin-left: 0;
+.fl-footer-link {
+	color: var(--white);
+	font-size: 14px;
+}
+
+.fl-footer-link:hover {
+	color: var(--green);
+}
+
+.footer-brand-item {
+	display: block !important;
+	margin-top: 2.5rem;
+	text-align: center;
+}
+
+.fl-footer-brand {
+	margin: auto;
+}
+
+.footer-stay-connected-list {
+	margin-left: 0 !important;
+	text-align: center;
+	width: 100%;
+}
+
+.footer-about-list,
+.footer-get-involved-list {
+	width: 100%;
+}
+
+.footer-bottom-container {
+	background-color: var(--white2);
+	width: 100% !important;
+	text-align: center;
+}
+
+@media (min-width: 576px) {
+
+	.footer-container > *:not(:first-child) {
+		margin-left: 3rem;
 	}
 
-	#footerContainer > * {
-		width: 100%;
-		margin-top: 2.5rem;
+	.footer-about-list,
+	.footer-get-involved-list {
+		width: auto;
 	}
 
-	footer .fl-navbar-brand {
-		margin-top: 0;
+	.footer-genre-list {
+		margin-left: 0 !important;
 	}
 
-	.footer-email {
-		width: 100% !important;
-		margin-top: 2.5rem;
+}	
+
+@media (min-width: 992px) {
+
+	.footer-container {
+		padding: 0 170px 70px;
+	}
+
+	.fl-footer-list {
+		margin-top: 70px;
+	}
+
+	.footer-genre-list {
+		width: 370px;
+		margin-left: 3rem !important;
+	}
+
+	.footer-brand-item {
+		margin-top: 140px;
+	}
+
+	.fl-footer-link {
+		font-size: 13px;
+	}
+
+	.footer-stay-connected-list {
+		margin-left: auto !important;
+		text-align: left;
+		width: auto;
 	}
 
 }
+
