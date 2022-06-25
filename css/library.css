@@ -586,6 +586,10 @@
 		color: var(--grey2) !important;
 	}
 
+	.page-pagination-sm-icon {
+		display: none !important;
+	}
+
 }
 
 /* the-end-of-lists */
